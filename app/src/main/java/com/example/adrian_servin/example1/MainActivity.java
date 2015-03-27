@@ -14,7 +14,7 @@ public class MainActivity extends ActionBarActivity{
     EditText txtNumA, txtNumB;
     Button btnSum,btnRes,btnMul,btnDiv,btnClean;
     TextView lblResult;
-    int NumA, NumB, Result;
+    float NumA, NumB, Result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +40,8 @@ public class MainActivity extends ActionBarActivity{
 
 
               }else{
-                  NumA = Integer.parseInt(String.valueOf(txtNumA.getText()));
-                  NumB = Integer.parseInt(String.valueOf(txtNumB.getText()));
+                  NumA = Float.parseFloat(String.valueOf(txtNumA.getText()));
+                  NumB = Float.parseFloat(String.valueOf(txtNumB.getText()));
                   Result = NumA + NumB;
                   lblResult.setText("Resultado: " + Result);
               }
@@ -61,8 +61,8 @@ public class MainActivity extends ActionBarActivity{
 
 
                 }else{
-                    NumA = Integer.parseInt(String.valueOf(txtNumA.getText()));
-                    NumB = Integer.parseInt(String.valueOf(txtNumB.getText()));
+                    NumA = Float.parseFloat(String.valueOf(txtNumA.getText()));
+                    NumB = Float.parseFloat(String.valueOf(txtNumB.getText()));
                     Result = NumA - NumB;
                     lblResult.setText("Resultado: " + Result);
                 }
@@ -79,8 +79,8 @@ public class MainActivity extends ActionBarActivity{
 
 
                 }else{
-                    NumA = Integer.parseInt(String.valueOf(txtNumA.getText()));
-                    NumB = Integer.parseInt(String.valueOf(txtNumB.getText()));
+                    NumA = Float.parseFloat(String.valueOf(txtNumA.getText()));
+                    NumB = Float.parseFloat(String.valueOf(txtNumB.getText()));
                     Result = NumA * NumB;
                     lblResult.setText("Resultado: " + Result);
                 }
@@ -102,8 +102,8 @@ public class MainActivity extends ActionBarActivity{
 
                 }else{
 
-                    NumA = Integer.parseInt(String.valueOf(txtNumA.getText()));
-                    NumB = Integer.parseInt(String.valueOf(txtNumB.getText()));
+                    NumA = Float.parseFloat(String.valueOf(txtNumA.getText()));
+                    NumB = Float.parseFloat(String.valueOf(txtNumB.getText()));
                     Result = NumA / NumB;
                     lblResult.setText("Resultado: " + Result);
                 }

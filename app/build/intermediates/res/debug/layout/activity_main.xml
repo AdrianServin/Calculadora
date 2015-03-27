@@ -25,7 +25,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:hint="Introduce un Número"
-        android:phoneNumber="true"
+        android:inputType="number"
         android:background="#ffcdcdcd" />
 
     <EditText
@@ -35,7 +35,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:hint="Introduce un Número"
-        android:phoneNumber="true"
+        android:inputType="number"
         android:background="#ffcdcdcd" />
 
     <LinearLayout
